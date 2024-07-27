@@ -140,7 +140,7 @@ body {
     background-image: url('img/python.png');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 45px; /* Ajusta el ancho según tus necesidades */
+    width: 50px; /* Ajusta el ancho según tus necesidades */
     height: 50px; /* Ajusta la altura según tus necesidades */
 }
 .logo-image-ruby {
