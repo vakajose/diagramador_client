@@ -1,12 +1,12 @@
-const PORT = process.env.PORT || 5050;
+const PORT = process.env.PORT;
 
-const HOST_WEB = process.env.HOST_WEB ||'http://localhost:8080';
+const HOST_WEB = process.env.HOST_WEB ;
 
-const DB_HOST = process.env.DB_HOST ||'localhost';
-const DB_USER = process.env.DB_USER || 'root';
+const DB_HOST = process.env.DB_HOST;
+const DB_USER = process.env.DB_USER ;
 const DB_PASSWORD = process.env.DB_PASSWORD;
 const DB_NAME = process.env.DB_NAME;
-const DB_PORT = process.env.DB_PORT || 3306;
+const DB_PORT = process.env.DB_PORT;
 
 const API_KEY_OPENIA = process.env.API_KEY_OPENIA;
 
