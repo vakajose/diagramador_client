@@ -8,7 +8,7 @@ const DB_PASSWORD = process.env.DB_PASSWORD || 'root';
 const DB_NAME = process.env.DB_NAME || 'sw1pizarraC4';
 const DB_PORT = process.env.DB_PORT || 3306;
 
-const API_KEY_OPENIA = process.env.API_KEY_OPENIA || "sk-proj-BT7bwx1ReZscqLMqeMnDT3BlbkFJ3iDsXTX9obgqsLflJWyM"
+const API_KEY_OPENIA = process.env.API_KEY_OPENIA || "your-secret-api-key";
 
 module.exports = {
   PORT,
