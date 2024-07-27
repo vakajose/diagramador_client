@@ -1,0 +1,152 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.index {
+    width: 100vw;
+    height: 100vh;
+}
+
+ .navbar {
+    background: rgb(0, 170, 142) !important;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.masthead {
+    color: rgb(11, 12, 12);
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    /* background: url('/img/fondo.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.index .container {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.masthead2 {
+    display: flex;
+    min-height: 100vh;
+}
+.masthead2 h1 {
+
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .masthead2 {
+    color: rgb(11, 12, 12);
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+      margin: 0;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    /* background: url('/img/fondo.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.masthead2 h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+.custom-card {
+    margin: auto; /* Centra la tarjeta horizontalmente */
+    margin-top: 5rem; /* Agrega espacio en la parte superior de la tarjeta */
+    display: flex;
+    border-radius: 20px; /* Agrega bordes redondeados a la tarjeta */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave alrededor de la tarjeta */
+    transition: box-shadow 0.3s ease;
+    background-color: #f8f9fa; /* Cambia el color de fondo de la tarjeta */
+}
+.custom-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+.custom-card .card-body {
+    padding: 2rem; /* Agrega más relleno al cuerpo de la tarjeta */
+}
+
+.custom-card h3, .custom-card h4 {
+    color: #292929; /* Cambia el color del texto de los títulos */
+}
+
+.custom-card .btn {
+    background-color: dodgerblue; /* Cambia el color de fondo del botón */
+    color: #fff; /* Cambia el color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+}
+
+
+  @media (min-width: 992px) {
+    .masthead {
+      height: 100vh;
+    }
+    .masthead h1 {
+      font-size: 5.5rem;
+    }
+  }
+.code-group {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.code-java {
+    background-color: #f8f9fa;
+}
+
+.code-python {
+    background-color: #d9e179;
+}
+
+.code-ruby {
+    background-color: #5faed2;
+}
+.logo-image-java {
+    background-image: url('img/java.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* Ajusta el ancho según tus necesidades */
+    height: 50px; /* Ajusta la altura según tus necesidades */
+}
+.logo-image-python {
+    background-image: url('img/python.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45px; /* Ajusta el ancho según tus necesidades */
+    height: 50px; /* Ajusta la altura según tus necesidades */
+}
+.logo-image-ruby {
+    background-image: url('img/typescript.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* Ajusta el ancho según tus necesidades */
+    height: 50px; /* Ajusta la altura según tus necesidades */
+}

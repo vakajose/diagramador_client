@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="card custom-card">
+                <div class="card-body">
+                    <form action="/salas/edit/{{sala.id}}" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="title" class="form-control" placeholder="Title" value="{{sala.title}}" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="xml" name="xml" class="form-control" placeholder="URL" value="{{sala.xml}}">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group code-group code-java">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="logo-image-java mr-2"></div>
+                                        <h6 class="mb-0">Java Code</h6>
+                                    </div>
+                                    <textarea name="description" rows="10" class="form-control" placeholder="Description">{{javaCode}}</textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group code-group code-python">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="logo-image-python mr-2"></div>
+                                        <h6 class="mb-0">Python Code</h6>
+                                    </div>
+                                    <textarea name="pythoncode" rows="10" class="form-control" placeholder="Python Code">{{pythonCode}}</textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group code-group code-ruby">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="logo-image-ruby mr-2"></div>
+                                        <h6 class="mb-0">Typescript Code</h6>
+                                    </div>
+                                    <textarea name="rubycode" rows="10" class="form-control" placeholder="Ruby Code">{{typescriptCode}}</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

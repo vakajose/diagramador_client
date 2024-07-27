@@ -1,0 +1,29 @@
+<div class="container p-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg" style="border-radius: 10px; background-color: #f8f9fa;">
+                <div class="card-header" style="background-color: #343a40; color: #fff; border-radius: 10px 10px 0 0;">
+                    <h3 class="mb-0">Crear Sala</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/salas/add" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="title" class="form-control" placeholder="Título" autofocus style="border-radius: 20px;">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="xml" class="form-control" placeholder="XML" style="border-radius: 20px;">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="description" rows="3" class="form-control" placeholder="Descripción" style="border-radius: 10px;"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block" style="border-radius: 20px;">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

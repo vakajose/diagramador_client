@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg" style="background-color: #4c3424;">
+  <div class="container">
+    {{#if user}}
+    <a class="navbar-brand" style="color: black" href="/salas">Salas</a>
+    {{else}}
+    <a class="navbar-brand" style="color: black" href="/">
+      <!--<i class="fas fa-link"></i> Salas c4-->
+      Inicio
+    </a>
+    {{/if}}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+
+        {{#if user}}
+
+        <li class="nav-item dropdown">
+          <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            SALAS
+          </a>-->
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Reuniones
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/salas">Mis Reuniiones</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/salas/add">Añadir </a>
+            <a class="dropdown-item" href="/salas/salasCompartidas"> Compartir !! </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/profile">Perfil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">Salir</a>
+        </li>
+        {{else}}
+        <li class="nav-item">
+          <a class="nav-link" href="/signin">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/signup">Registro</a>
+        </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>
